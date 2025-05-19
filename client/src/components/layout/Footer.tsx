@@ -39,30 +39,30 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <Link href="/">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                     {t('home')}
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/products">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                     {t('products')}
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/courses">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                     {t('courses')}
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/appointments">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">
                     {t('appointments')}
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
