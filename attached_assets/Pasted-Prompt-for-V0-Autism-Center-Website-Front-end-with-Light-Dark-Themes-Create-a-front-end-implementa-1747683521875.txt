@@ -1,0 +1,60 @@
+Prompt for V0: Autism Center Website Front-end with Light/Dark Themes
+Create a front-end implementation for an Autism Center website using React 19 with JSX (not TypeScript) in a single HTML file. The website should include a landing page, e-commerce module, online courses module, appointment scheduling module, and an admin dashboard, as described below. Use Tailwind CSS for a modern, responsive, and accessible (WCAG 2.1 compliant) design with light and dark themes. Implement localization with i18next for Arabic (RTL) and English (LTR). Use modern JavaScript (ES6+), host React and dependencies via CDN (e.g., cdn.jsdelivr.net), and avoid <form> tags for submission due to sandbox restrictions; use button clicks with event handlers instead. Use className instead of class for JSX attributes.
+Website Features
+
+Landing Page:
+Display the Autism Center’s mission, services, and contact info with a modern, clean aesthetic (e.g., smooth animations, rounded edges, gradient accents).
+Include navigation to e-commerce, courses, and appointment scheduling.
+Add a call-to-action button (e.g., "Join a Zoom Call") with hover effects.
+Support Arabic (RTL) and English (LTR) with a language toggle.
+Highlight testimonials and key services with card-based layouts.
+Themes: Support light (white/bright colors) and dark (dark background, light text) modes with a theme toggle.
+
+
+E-commerce Module:
+List up to 50 products with images, descriptions, prices, and categories in a grid layout with modern hover effects.
+Include a shopping cart and checkout with static order status display.
+Show prices in SAR (Arabic) or USD (English) based on language.
+Support Arabic (RTL) and English (LTR) for product details and UI.
+Themes: Ensure product cards and checkout UI adapt to light/dark modes (e.g., contrasting colors for readability).
+
+
+Online Courses Module:
+Display a course catalog with titles, descriptions, and enrollment buttons in a modern carousel or grid.
+Include a login interface for secure access (mock UI, no backend) with sleek input designs.
+Show course previews and progress tracking UI with modern progress bars.
+Support Arabic (RTL) and English (LTR) for course content; include mock subtitle toggles.
+Themes: Adapt course UI to light/dark modes with consistent color schemes.
+
+
+Appointment & Scheduling Module:
+Provide a calendar interface for selecting appointment dates/times with a modern, interactive design (e.g., animated date picker).
+Display mock Zoom link generation and appointment confirmation with clean modals.
+Allow appointment cancellation/rescheduling (mock UI) with intuitive buttons.
+Support Arabic (RTL) and English (LTR) for calendar and notifications.
+Themes: Ensure calendar and modals adapt to light/dark modes with clear visibility.
+
+
+Admin Dashboard:
+Include sections for managing e-commerce inventory, appointments, courses, and user roles with a modern sidebar layout.
+Provide mock UI for adding/editing products, viewing appointments, and tracking payments with sleek tables and buttons.
+Support Arabic (RTL) and English (LTR) with RTL layout for Arabic.
+Themes: Adapt dashboard UI to light/dark modes with high contrast for usability.
+
+
+
+Technical Requirements
+
+Use React 18 with JSX, hosted via CDN (e.g., cdn.jsdelivr.net).
+Style with Tailwind CSS for a modern, responsive, and accessible design (e.g., use Tailwind’s dark mode utilities like dark:bg-gray-800).
+Implement light/dark theme switching with a toggle button, persisting user preference in localStorage.
+Use i18next for localization supporting Arabic (RTL, Amiri font) and English (LTR, Noto Sans font).
+Ensure WCAG 2.1 compliance (e.g., sufficient color contrast, screen reader support in both languages).
+Use component-based architecture with reusable React components.
+Avoid <form> tags; use button event handlers for interactions.
+Include a language toggle and theme toggle in the header.
+Mock API calls with static data for product lists, courses, and appointments.
+Modern Design: Use smooth transitions, subtle animations (e.g., fade-ins, hover effects), and a clean, minimalistic aesthetic with Tailwind CSS.
+
+Output Format
+Generate a single HTML file with embedded JSX, Tailwind CSS, and i18next, including all components for the landing page, e-commerce, courses, appointment scheduling, and admin dashboard. Use static data for mock content (e.g., sample products, courses, appointments). Ensure the file is self-contained, runs in a browser with CDN dependencies, and supports light/dark themes and Arabic/English localization.
