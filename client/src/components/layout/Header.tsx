@@ -39,9 +39,9 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount = 0, onCartOpen }) => {
             <Heart className="h-5 w-5" />
           </div>
           <Link href="/">
-            <a className="text-xl font-bold text-primary cursor-pointer">
+            <span className="text-xl font-bold text-primary cursor-pointer">
               {t('siteName')}
-            </a>
+            </span>
           </Link>
         </div>
 
@@ -49,13 +49,13 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount = 0, onCartOpen }) => {
         <nav className="hidden md:flex items-center space-x-6 rtl:space-x-reverse">
           {navLinks.map(link => (
             <Link key={link.path} href={link.path}>
-              <a
+              <span
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   isActive(link.path) ? 'text-primary' : 'text-muted-foreground'
-                }`}
+                } cursor-pointer`}
               >
                 {t(link.label)}
-              </a>
+              </span>
             </Link>
           ))}
         </nav>
@@ -105,16 +105,16 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount = 0, onCartOpen }) => {
               <nav className="flex flex-col gap-4 mt-8">
                 {navLinks.map(link => (
                   <Link key={link.path} href={link.path}>
-                    <a
+                    <span
                       className={`px-2 py-1 rounded-md text-sm font-medium ${
                         isActive(link.path) 
                           ? 'bg-primary text-primary-foreground' 
                           : 'hover:bg-muted'
-                      }`}
+                      } cursor-pointer`}
                       onClick={() => setIsOpen(false)}
                     >
                       {t(link.label)}
-                    </a>
+                    </span>
                   </Link>
                 ))}
                 <div className="mt-4 pt-4 border-t flex flex-col gap-4">
